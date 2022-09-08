@@ -1,10 +1,10 @@
-FROM hayd/alpine-deno:1.7.1
+FROM denoland/deno:alpine-1.25.1
 
 WORKDIR /app
 
 USER deno
 
-# These steps will be re-run upon each file change in your working directory:
 ADD . .
+RUN deno cache src/index.ts
 
-CMD deno run --allow-net --allow-env src/index.ts
+CMD ["run", "--allow-net", "--allow-env", "src/index.ts"]
