@@ -1,6 +1,6 @@
 # Deno Example
 
-This example is a small [Deno](https://deno.land/) webserver.
+This example is a small [Deno](https://deno.land/) webserver
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/LsaSsU)
 
